@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "247757436660",
+    "firebase_url": "https://test-134da.firebaseio.com",
+    "project_id": "test-134da",
+    "storage_bucket": "test-134da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247757436660:android:cb63ad4cc36021cf4310a1",
+        "android_client_info": {
+          "package_name": "com.platform.nomros.platform_nomros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247757436660-42l5utj155i63id7lsjt9nnpov9vvoib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdNfuC669XzgqcJIjzIsk0pv_DORpUukk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247757436660-42l5utj155i63id7lsjt9nnpov9vvoib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
