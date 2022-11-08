@@ -7,7 +7,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:platform_nomros/model/home_class.dart';
 import 'package:platform_nomros/model/screen/product_model.dart';
-
+import 'package:platform_nomros/screen/qrcode.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import 'package:platform_nomros/ui/reusable/global_function.dart';
@@ -336,8 +336,17 @@ class _VideoState extends State<Video> {
                                 CupertinoButton(
                                   child: Text('إلتقاط الباركود QR', style: TextStyle(fontFamily: 'arabic', color: Colors.white),),
                                   color: CupertinoColors.activeBlue,
-                                  onPressed: () async { 
-                                    print("aaaassdd");
+                                  onPressed: () async {
+                                    var result = await Navigator.push(context, CupertinoPageRoute(builder: (context) => BarcodeScanner2Page()));
+                                    print("aaaassdd ${result}");
+                                    if(result != -1){
+                                      _qrCode.text = result.toString();
+                                      setState(() {
+                                        FocusScope.of(context).unfocus();
+                                        _isButtonDisabled = true;
+                                      });
+                                      sendCode();
+                                    }
 
                                     },
                                 ),
